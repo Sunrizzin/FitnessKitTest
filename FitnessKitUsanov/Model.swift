@@ -13,7 +13,7 @@ import RealmSwift
 class Schedule: Object, Mappable {
     @objc dynamic var appointment: Int = 0
     @objc dynamic var appointment_id: String = ""
-    @objc dynamic var availability: String = ""
+    @objc dynamic var availability: Int = 0
     @objc dynamic var color: String = ""
     @objc dynamic var descriptionField : String = ""
     @objc dynamic var endTime : String = ""
