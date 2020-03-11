@@ -7,6 +7,7 @@ target 'FitnessKitUsanov' do
 	pod 'Alamofire'
 	pod 'AlamofireObjectMapper'
 	pod 'RealmSwift'
+	pod 'Kingfisher'
   # Pods for FitnessKitUsanov
 
 end
