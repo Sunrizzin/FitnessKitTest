@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B4894762418E7A800DF2529 /* SchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4894752418E7A800DF2529 /* SchedulePresenter.swift */; };
 		8BE6D64024046B44007745E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6D63F24046B44007745E2 /* AppDelegate.swift */; };
 		8BE6D64224046B44007745E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6D64124046B44007745E2 /* SceneDelegate.swift */; };
 		8BE6D64724046B44007745E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE6D64524046B44007745E2 /* Main.storyboard */; };
 		8BE6D64924046B45007745E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE6D64824046B45007745E2 /* Assets.xcassets */; };
 		8BE6D64C24046B45007745E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE6D64A24046B45007745E2 /* LaunchScreen.storyboard */; };
-		8BE6D65424046C4E007745E2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6D65324046C4E007745E2 /* API.swift */; };
-		8BE6D656240470F9007745E2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6D655240470F9007745E2 /* Model.swift */; };
+		8BE6D65424046C4E007745E2 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6D65324046C4E007745E2 /* APIService.swift */; };
+		8BE6D656240470F9007745E2 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6D655240470F9007745E2 /* Schedule.swift */; };
 		8BE6D65C24050526007745E2 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6D65B24050526007745E2 /* ScheduleTableViewController.swift */; };
 		8BE6D65E240505DA007745E2 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6D65D240505DA007745E2 /* ScheduleTableViewCell.swift */; };
 		CE87F2F9E371C3CB674B5FA2 /* Pods_FitnessKitUsanov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F546DF864C64DFB2BB5855 /* Pods_FitnessKitUsanov.framework */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		4CC0F73FB6DDE32608A4AA76 /* Pods-FitnessKitUsanov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessKitUsanov.release.xcconfig"; path = "Target Support Files/Pods-FitnessKitUsanov/Pods-FitnessKitUsanov.release.xcconfig"; sourceTree = "<group>"; };
 		52F546DF864C64DFB2BB5855 /* Pods_FitnessKitUsanov.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessKitUsanov.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4894752418E7A800DF2529 /* SchedulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePresenter.swift; sourceTree = "<group>"; };
 		8BE6D63C24046B44007745E2 /* Usanov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Usanov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE6D63F24046B44007745E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BE6D64124046B44007745E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,8 +31,8 @@
 		8BE6D64824046B45007745E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BE6D64B24046B45007745E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BE6D64D24046B45007745E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BE6D65324046C4E007745E2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		8BE6D655240470F9007745E2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8BE6D65324046C4E007745E2 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8BE6D655240470F9007745E2 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		8BE6D65B24050526007745E2 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		8BE6D65D240505DA007745E2 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		EB4063603224D91A7484CF6F /* Pods-FitnessKitUsanov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessKitUsanov.debug.xcconfig"; path = "Target Support Files/Pods-FitnessKitUsanov/Pods-FitnessKitUsanov.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +67,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B48946F2418E5EB00DF2529 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8BE6D655240470F9007745E2 /* Schedule.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B4894702418E61800DF2529 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8BE6D65B24050526007745E2 /* ScheduleTableViewController.swift */,
+				8BE6D65D240505DA007745E2 /* ScheduleTableViewCell.swift */,
+				8BE6D64524046B44007745E2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B4894712418E63000DF2529 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8B4894752418E7A800DF2529 /* SchedulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8B4894722418E6C500DF2529 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8BE6D65324046C4E007745E2 /* APIService.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		8BE6D63324046B44007745E2 = {
 			isa = PBXGroup;
 			children = (
@@ -86,16 +122,15 @@
 		8BE6D63E24046B44007745E2 /* FitnessKitUsanov */ = {
 			isa = PBXGroup;
 			children = (
+				8B4894722418E6C500DF2529 /* DataSource */,
+				8B4894712418E63000DF2529 /* Presenter */,
+				8B4894702418E61800DF2529 /* View */,
+				8B48946F2418E5EB00DF2529 /* Model */,
 				8BE6D63F24046B44007745E2 /* AppDelegate.swift */,
 				8BE6D64124046B44007745E2 /* SceneDelegate.swift */,
-				8BE6D64524046B44007745E2 /* Main.storyboard */,
 				8BE6D64824046B45007745E2 /* Assets.xcassets */,
 				8BE6D64A24046B45007745E2 /* LaunchScreen.storyboard */,
 				8BE6D64D24046B45007745E2 /* Info.plist */,
-				8BE6D65324046C4E007745E2 /* API.swift */,
-				8BE6D655240470F9007745E2 /* Model.swift */,
-				8BE6D65B24050526007745E2 /* ScheduleTableViewController.swift */,
-				8BE6D65D240505DA007745E2 /* ScheduleTableViewCell.swift */,
 			);
 			path = FitnessKitUsanov;
 			sourceTree = "<group>";
@@ -215,12 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BE6D656240470F9007745E2 /* Model.swift in Sources */,
+				8BE6D656240470F9007745E2 /* Schedule.swift in Sources */,
 				8BE6D64024046B44007745E2 /* AppDelegate.swift in Sources */,
 				8BE6D65E240505DA007745E2 /* ScheduleTableViewCell.swift in Sources */,
-				8BE6D65424046C4E007745E2 /* API.swift in Sources */,
+				8BE6D65424046C4E007745E2 /* APIService.swift in Sources */,
 				8BE6D65C24050526007745E2 /* ScheduleTableViewController.swift in Sources */,
 				8BE6D64224046B44007745E2 /* SceneDelegate.swift in Sources */,
+				8B4894762418E7A800DF2529 /* SchedulePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

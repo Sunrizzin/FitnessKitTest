@@ -11,17 +11,14 @@ import RealmSwift
 
 class ScheduleTableViewController: UITableViewController {
     var token: NotificationToken?
-    let schedule = API.instance.realm.objects(Schedule.self)
+    let schedule = try! Realm().objects(Schedule.self)
     let dayWeek = ["Понедельник", "Вторник", "Среда", "Черверг", "Пятница", "Суббота", "Воскресенье"]
+    public let schedulePresenter = SchedulePresenter(apiService: APIService())
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        API.instance.getSchedule { (state) in
-            if !state {
-                self.showError()
-            }
-        }
+        schedulePresenter.setViewDelegate(scheduleViewDelegate: self)
+       schedulePresenter.refresh()
         
         self.token = schedule.observe {  (changes: RealmCollectionChange) in
             switch changes {
@@ -37,11 +34,7 @@ class ScheduleTableViewController: UITableViewController {
     }
     
     @IBAction func handReload(_ sender: UIBarButtonItem) {
-        API.instance.getSchedule { (state) in
-            if !state {
-                self.showError()
-            }
-        }
+        schedulePresenter.refresh()
     }
     
     private func showError() {
@@ -68,4 +61,12 @@ class ScheduleTableViewController: UITableViewController {
         
         return cell
     }
+}
+
+extension ScheduleTableViewController: ScheduleViewDelegate {
+    func updateUI() {
+        self.tableView.reloadSections([0], with: .automatic)
+    }
+    
+    
 }

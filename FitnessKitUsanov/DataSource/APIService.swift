@@ -11,12 +11,10 @@ import RealmSwift
 import Alamofire
 import AlamofireObjectMapper
 
-class API {
-    static let instance = API()
+class APIService {
     private let url = "https://sample.fitnesskit-admin.ru/schedule/get_group_lessons_v2/1/"
-    private init() {}
     
-    let realm = try! Realm()
+    private let realm = try! Realm()
     
     func getSchedule(_ completion: @escaping (Bool) -> Void) {
         guard let url = URL(string: self.url) else { return }
